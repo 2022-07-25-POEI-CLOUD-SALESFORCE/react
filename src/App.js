@@ -1,12 +1,26 @@
 import './App.css';
 import Composant1 from './Composant1';
 import Composant2 from './Composant2';
+import Footer from './Footer';
+import Header from './Header';
 
 function App() {
+  let msg = 'hello';
+  // fonction de gestion du clic btn 1
+  function outputEvent() {
+    console.log('btn 1');
+  }
+  //fonction de gestion du clic btn 2
+  function outputEvent2() {
+    console.log('btn 2');
+  }
+
   return (
     <div className="App">
+      <Header msg="hello" />
       <Composant1 />
       <Composant2 />
+      <Footer msg={msg} clickHandler={outputEvent} clickHandler2={outputEvent2} />
     </div>
   );
 }
