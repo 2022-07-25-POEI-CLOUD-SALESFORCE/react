@@ -12,6 +12,8 @@ export default function Header(props) {
   // setcount est la fonction pour le mettre à jour
   // 0 est la valeur par défaut
   const [count, setCount] = useState(0);
+  const [count2, setCount2] = useState(0);
+  const [count3, setCount3] = useState(0);
   return (
     <header>
       <img src="logo192.png" alt="logo" />

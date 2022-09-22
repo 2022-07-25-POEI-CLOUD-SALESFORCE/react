@@ -3,6 +3,8 @@ import Composant1 from './Composant1';
 import Composant2 from './Composant2';
 import Footer from './Footer';
 import Header from './Header';
+import Parent1 from './Parent1';
+import Parent2 from './Parent2';
 
 function App() {
   let msg = 'hello';
@@ -20,6 +22,9 @@ function App() {
       <Header msg="hello" />
       <Composant1 />
       <Composant2 />
+      <Parent1 />
+      <Parent2 />
+
       <Footer msg={msg} clickHandler={outputEvent} clickHandler2={outputEvent2} />
     </div>
   );
